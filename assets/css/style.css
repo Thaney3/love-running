@@ -127,6 +127,37 @@ main {
   color: #ffffff;
 }
 
+/* Position reasons div center and adjust margins */
+#reasons {
+  width: 90%;
+  margin: 20px auto;
+}
+
+/* Make the reasons section header bigger */
+#reasons h2 {
+  font-size: 280%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Styles for the linebreaks in reasons section*/
+#benefits hr {
+  border-top: 1px solid #3a3a3a;
+  margin: 5px 0;
+}
+
+/* Spacing for child divs inside physical & mental benefits*/
+#benefits-physical > div,
+#benefits-mental > div {
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+/* Padding for child paragraphs of physical/mental benefits */
+#benefits p {
+  padding: 0 20px;
+}
+
 /* Footer */
 
 /* Spacing and position of social network links */
