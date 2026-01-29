@@ -18,6 +18,7 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+/* General heading styles */
 h1,
 h2,
 h3 {
@@ -45,16 +46,19 @@ header a {
   color: inherit;
 }
 
+/* Styles for the nav menu */
 #menu {
   font-size: 110%;
   letter-spacing: 4px;
   list-style: none;
 }
 
+/* Spacing for nav links */
 #menu > li {
   margin-bottom: 1em;
 }
 
+/* Underline for current page */
 .active {
   border-bottom: 1px solid #3a3a3a;
 }
@@ -76,15 +80,18 @@ nav {
   display: block;
 }
 
+/* Hides nav menu when not clicked */
 #nav-toggle {
   display: none;
 }
 
+/* Increases size of dropdown icon */
 .nav-toggle-label {
   font-size: 2rem;
 }
 
 /* Main content */
+
 main {
   /* To make main element take up any surplus space */
   flex: 1 0 auto;
@@ -101,6 +108,7 @@ main {
   position: relative;
 }
 
+/* Cover text div over hero image  */
 #cover-text {
   /* rgba used to set opacity to 70% */
   background-color: rgba(241, 109, 107, 70%);
@@ -113,12 +121,15 @@ main {
   padding-left: 10px;
 }
 
+/* Colouring the cover text */
 #cover-text > h2,
 #cover-text > h3 {
   color: #ffffff;
 }
 
 /* Footer */
+
+/* Spacing and position of social network links */
 #social-networks {
   text-align: center;
   padding: 20px 0;
@@ -127,6 +138,7 @@ main {
   list-style-type: none;
 }
 
+/* Styles for the social network link icons */
 #social-networks i {
   font-size: 160%;
   padding: 5%;
@@ -137,6 +149,10 @@ main {
 
 @media screen and (min-width: 768px) {
   /* Header */
+
+  /* Changes the nav menu styles for larger screens,
+  removes box-shadow and makes menu fit the larger screen  */
+
   nav {
     display: block;
     position: relative;
@@ -145,6 +161,7 @@ main {
     padding-right: 1rem;
   }
 
+  /* Makes the menu take up more of the screen */
   #menu {
     display: flex;
   }
@@ -153,6 +170,7 @@ main {
     padding-left: 1rem;
   }
 
+  /* Hides the burger icon used for the drop down menu */
   .nav-toggle-label {
     display: none;
   }
