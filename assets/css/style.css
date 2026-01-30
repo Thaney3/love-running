@@ -214,7 +214,6 @@ main {
   color: #fafafa;
 }
 
-
 /* Gallery page */
 
 /* Prevents image overflow and shows alt text clearly */
@@ -244,6 +243,15 @@ main {
   font-size: 160%;
   padding: 5%;
   color: #3a3a3a;
+}
+
+/* Media query: large or landscape phones (576px and larger) */
+/* Sets gallery to have 2 columns of photos on larger or landscape phones */
+@media screen and (min-width: 576px) {
+  #photos {
+    column-count: 2;
+    column-gap: 0;
+  }
 }
 
 /* Media query: tablets and larger (768px and larger) */
@@ -311,12 +319,24 @@ main {
     text-align: end;
     align-self: flex-end;
   }
+
+  /* Gallery */
+  /* Sets gallery to have 3 columns of photos on tablets and larger */
+  #photos {
+    column-count: 3;
+  }
 }
 
 /* Media query: larger screens - laptops and larger (992px) */
 @media screen and (min-width: 992px) {
   #menu a:hover {
     border-bottom: 1px solid #3a3a3a;
+  }
+
+  /* Gallery */
+  /* Sets gallery to have 4 columns of photos on larger screens */
+  #photos {
+    column-count: 4;
   }
 }
 
