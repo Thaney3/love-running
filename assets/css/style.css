@@ -158,8 +158,11 @@ main {
   padding: 0 20px;
 }
 
-/* Benefits image */
+/* Hero section END */
 
+/* Benefits section */
+
+/* Benefits image */
 #circle-cover-bg {
   background: url(../images/loverunning-reasons-image.webp) no-repeat center
     top/cover;
@@ -175,6 +178,35 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Meet-ups section */
+
+/* Background image of Dublin city */
+#times {
+  background: url(../images/loverunning-dublin-city.webp) no-repeat center
+    center/cover;
+  /* Makes structure responsive without media query */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#times > div {
+  color: #fafafa;
+  background-color: rgba(0, 0, 0, 60%);
+  padding: 15px;
+  text-align: center;
+  /* Stops the divs wrapping on screens less than 400px wide
+  and makes them expand to fill the row on larger screens */
+  flex-basis: 200px;
+  flex-grow: 1;
+  /* Creates a grid of meetup time divs over the background image */
+  border: 2px solid white;
+}
+
+#times h3 {
+  /* Override the heading colour in general styles */
+  color: #fafafa;
 }
 
 /* Footer */
