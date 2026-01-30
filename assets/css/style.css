@@ -214,6 +214,20 @@ main {
   color: #fafafa;
 }
 
+
+/* Gallery page */
+
+/* Prevents image overflow and shows alt text clearly */
+#photos img {
+  width: 100%;
+  line-height: 1em;
+}
+
+/* Removes gaps between images */
+#photos {
+  line-height: 0;
+}
+
 /* Footer */
 
 /* Spacing and position of social network links */
